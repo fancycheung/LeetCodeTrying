@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author:nali 
-@file: 1o1.symmetrictree.py 
+@file: 101.symmetrictree.py
 @time: 2018/8/31/上午9:36
 @software: PyCharm
 """
@@ -46,16 +46,16 @@ def isSymmetric(root):
     :type root: TreeNode
     :rtype: bool
     """
+    return isMirror(root, root)
 
 
-def inOrderTraversal(root, list_):
-    """
-    中序遍历
-    :param root:
-    :param list_:
-    :return:
-    """
-    
+def isMirror(t1, t2):
+    if t1 is None and t2 is None:
+        return True
+    if t1 is None or t2 is None:
+        return False
+    return (t1.val == t2.val) and isMirror(t1.left, t2.right) and isMirror(t1.right, t2.left)
+
 
 if __name__ == "__main__":
     pass
