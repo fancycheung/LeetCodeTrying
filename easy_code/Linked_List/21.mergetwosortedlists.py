@@ -6,6 +6,7 @@
 @time: 2018/8/29/上午8:51
 @software: PyCharm
 """
+from easy_code.Linked_List import ListNode
 
 """
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
@@ -20,12 +21,6 @@ Output: 1->1->2->3->4->4
 import sys
 reload(sys)
 sys.setdefaultencoding("utf8")
-
-
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
 
 
 def mergeTwoLists(l1, l2):

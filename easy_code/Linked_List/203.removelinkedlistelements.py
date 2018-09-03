@@ -6,6 +6,7 @@
 @time: 2018/9/1/下午5:09
 @software: PyCharm
 """
+from easy_code.Linked_List import ListNode
 
 """
 Remove all elements from a linked list of integers that have value val.
@@ -21,13 +22,6 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding("utf8")
-
-
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
 
 
 def removeElements(head, val):

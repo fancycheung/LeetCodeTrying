@@ -26,12 +26,6 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 
 
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
 def deleteDuplicates(head):
     """
     :type head: ListNode
